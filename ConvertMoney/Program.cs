@@ -10,11 +10,11 @@ namespace ConvertMoney
     {
         static void Main(string[] args)
         {
-            float vnd;
-            Console.Write("Type in the VND to convert to USD: ");
-            vnd = float.Parse(Console.ReadLine());
-            float USD = vnd / 23000;
-            Console.WriteLine("Vnd convert to Usd = " + USD);
+            int USD;
+            Console.Write("Type in the USD to convert to VND: ");
+            USD = int.Parse(Console.ReadLine());
+            int VND  = USD * 23000;
+            Console.WriteLine("USD convert to VND = " + VND);
             Console.ReadKey();
         }
     }
